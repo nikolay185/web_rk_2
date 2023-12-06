@@ -1,0 +1,123 @@
+:root {
+    font-size: 62.5%;
+    --text-color: #688800;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--text-color);
+    line-height: 140%;
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+header{
+    font-family: 'El Messiri', sans-serif;
+    display: flex;
+}
+
+header button {
+    display: block;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    margin: 0 24px;
+
+}
+header a{
+    outline: none;
+    text-decoration: none;
+    color: var(--text-color);
+    margin: auto;
+}
+
+main img{
+    width: 280px;
+    height: 314px;
+}
+
+main h2{
+    font-family: 'Amatic SC', sans-serif;
+}
+
+main button{
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.count button p{
+    margin: 0;
+    text-align: center;
+}
+
+.count p{
+    margin: 0;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.count{
+    display: grid;
+    grid-template-rows: 32px;
+    grid-template-columns: 32px 32px 32px;
+}
+
+.referals a{
+    display: block;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    width: fit-content;
+    padding: 8px 50px;
+    border: 1px solid var(--text-color);
+    border-radius: 50px;
+}
+
+@media (max-width: 767px){
+    .nav {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav{
+        display: flex;
+        width: 700px;
+        justify-content: space-around;
+        margin: auto;
+    }
+    header button{
+        display: none;
+    }
+}
